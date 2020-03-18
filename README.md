@@ -4,10 +4,12 @@
 If you want to reset your database before seeding, drop the database on MongoDB first.
 
 Press the trash can icon in your MongoDB client:
+
 ![Delete Database](./assets/delete_database.png)
 
 ## Set Up
 Your folder structure should look like this:
+
 ![Folder Structure](./assets/folder_structure.png)
 
 ### Define the data
@@ -30,7 +32,7 @@ module.exports = [
 ]
 ```
 
-### [node seeds/index.js]()
+### [node seeds/index.js](https://github.com/ssoonmi/mongo-atlas-js-seed-demo/blob/master/seeds/index.js)
 Create a file called `index.js` in the `seeds` folder, and copy the following into it:
 
 ```javascript
