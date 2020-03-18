@@ -1,4 +1,4 @@
-# Seeding into MongoDB Atlas with Connection URI
+# Seeding with JavaScript into MongoDB Atlas with Connection URI
 If you have any questions or are stuck at any point, please message me.
 
 ## Drop Database (optional)
