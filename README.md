@@ -1,4 +1,4 @@
-# Seeding into MongoDB Atlas
+# Seeding into MongoDB Atlas with Connection URI
 
 ## Drop Database (optional)
 If you want to reset your database before seeding, drop the database on MongoDB first.
