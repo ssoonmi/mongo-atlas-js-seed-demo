@@ -1,1 +1,1 @@
-# MERN-seed-demo
+# Seeding into Atlas
