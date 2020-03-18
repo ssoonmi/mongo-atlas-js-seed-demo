@@ -110,3 +110,6 @@ If you want to make this a reoccurring command, include it in your `package.json
   }
 }
 ```
+
+## More Info
+For more information on the `mongoimport` command that the script ran, check out the docs: [https://docs.mongodb.com/manual/reference/program/mongoimport/](https://docs.mongodb.com/manual/reference/program/mongoimport/)
