@@ -4,6 +4,9 @@ If you have any questions or are stuck at any point, please message me.
 ## Checking your Environment
 See the section for `Check Your Environment` on this page and follow instructions for your respective machine: [https://docs.mongodb.com/guides/server/import/](https://docs.mongodb.com/guides/server/import/)
 
+If this was unsuccessful, you need to install the mongo shell.
+To do so, follow the instructions here for your respective machine: [https://docs.mongodb.com/guides/server/install/](https://docs.mongodb.com/guides/server/install/)
+
 ## Drop Database (optional)
 If you want to reset your database before seeding, drop the database on MongoDB first.
 
