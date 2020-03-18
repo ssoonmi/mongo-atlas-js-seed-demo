@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const { exec } = require("child_process");
-const db = require('./config/keys').mongoURI;
+const db = require('../config/keys').mongoURI;
 
 const users = require('./data/users');
 
