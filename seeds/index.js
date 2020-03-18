@@ -7,21 +7,21 @@ const users = require('./data/users');
 
 const data = { users };
 
-const output = "./output";
+const output = "./seeds/output";
 
 if (!fs.existsSync(output)) {
   fs.mkdirSync(output);
 }
 
 Object.entries(data).forEach(([key, value]) => {
-  fs.writeFile(`output/${key}.json`, JSON.stringify(value), err => {
+  fs.writeFile(`seeds/output/${key}.json`, JSON.stringify(value), err => {
     if (err) throw err;
     console.log(`The file, ${key}.json has been saved!`);
   });
 
   const command = `mongoimport --uri "${db}" \
        --collection ${key} --jsonArray \
-       --file ${path.join(__dirname, output, `${key}.json`)}`;
+       --file ${path.join(__dirname, '../', output, `${key}.json`)}`;
 
   exec(command, (error, stdout, stderr) => {
     if (error) {
