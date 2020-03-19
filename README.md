@@ -2,9 +2,8 @@
 If you have any questions or are stuck at any point, please message me.
 
 ## Checking your Environment
-See the section for `Check Your Environment` on this page and follow instructions for your respective machine: [https://docs.mongodb.com/guides/server/import/](https://docs.mongodb.com/guides/server/import/)
+Check to see if you have the `mongoimport` command.If you don't have this command, you need to install the MongoDB.
 
-If this was unsuccessful, you need to install the MongoDB.
 To do so, follow the instructions here for your respective machine: [https://docs.mongodb.com/manual/administration/install-community/](https://docs.mongodb.com/manual/administration/install-community/)
 
 ## Drop Database (optional)
