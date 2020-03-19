@@ -4,8 +4,8 @@ If you have any questions or are stuck at any point, please message me.
 ## Checking your Environment
 See the section for `Check Your Environment` on this page and follow instructions for your respective machine: [https://docs.mongodb.com/guides/server/import/](https://docs.mongodb.com/guides/server/import/)
 
-If this was unsuccessful, you need to install the mongo shell.
-To do so, follow the instructions here for your respective machine: [https://docs.mongodb.com/guides/server/install/](https://docs.mongodb.com/guides/server/install/)
+If this was unsuccessful, you need to install the MongoDB.
+To do so, follow the instructions here for your respective machine: [https://docs.mongodb.com/manual/administration/install-community/](https://docs.mongodb.com/manual/administration/install-community/)
 
 ## Drop Database (optional)
 If you want to reset your database before seeding, drop the database on MongoDB first.
@@ -67,21 +67,21 @@ Next, you're going to define the `data` object which will be used to generate th
 After that, paste the following into the `index.js` file:
 
 ```javascript
-const output = "./output";
+const output = "./seeds/output";
 
 if (!fs.existsSync(output)) {
   fs.mkdirSync(output);
 }
 
 Object.entries(data).forEach(([key, value]) => {
-  fs.writeFile(`output/${key}.json`, JSON.stringify(value), err => {
+  fs.writeFile(`seeds/output/${key}.json`, JSON.stringify(value), err => {
     if (err) throw err;
     console.log(`The file, ${key}.json has been saved!`);
   });
 
   const command = `mongoimport --uri "${db}" \
        --collection ${key} --jsonArray \
-       --file ${path.join(__dirname, output, `${key}.json`)}`;
+       --file ${path.join(__dirname, '../', output, `${key}.json`)}`;
 
   exec(command, (error, stdout, stderr) => {
     if (error) {
