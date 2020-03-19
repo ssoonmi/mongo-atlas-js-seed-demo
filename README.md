@@ -2,7 +2,7 @@
 If you have any questions or are stuck at any point, please message me.
 
 ## Checking your Environment
-Check to see if you have the `mongoimport` command.If you don't have this command, you need to install the MongoDB.
+Check to see if you have the `mongoimport` command in your terminal. If you don't have this command, you need to install the MongoDB.
 
 To do so, follow the instructions here for your respective machine: [https://docs.mongodb.com/manual/administration/install-community/](https://docs.mongodb.com/manual/administration/install-community/)
 
